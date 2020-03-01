@@ -1,0 +1,6 @@
+#!/bin/bash
+# CWID - Count Words In Document
+
+# converts given latex file into plain text and counts words
+echo "$(pandoc -s -t plain 2> /dev/null $1 | wc -w)"
+
